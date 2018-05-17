@@ -32,12 +32,12 @@ var x = setInterval(function () {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("commingsoon").innerHTML = days + "d " + hours + "h "
+    document.getElementById("comingsoon").innerHTML = days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
 
     // count down finish
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("commingsoon").innerHTML = "EXPIRED";
+        document.getElementById("comingsoon").innerHTML = "EXPIRED";
     }
 }, 1000);
